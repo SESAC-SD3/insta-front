@@ -60,7 +60,7 @@ export const getUserPosts = (username) => api.get(`/api/users/${username}/posts`
 // 댓글 API
 export const getComments = (postId) => api.get(`/api/posts/${postId}/comments`);
 export const createComment = (postId, data) => api.post(`/api/posts/${postId}/comments`, data);
-export const deleteComment = (id) => api.delete(`/api/comments/${id}`);
+export const deleteComment = (postId, commentId) => api.delete(`/api/posts/${postId}/comments/${commentId}`);
 
 // 좋아요 API
 export const likePost = (postId) => api.post(`/api/posts/${postId}/like`);

@@ -40,7 +40,7 @@ const CommentList = ({ postId }) => {
 
   const handleDelete = async (commentId) => {
     try {
-      await deleteComment(commentId);
+      await deleteComment(postId, commentId);
       setComments((prev) => prev.filter((c) => c.id !== commentId));
     } catch (error) {
       console.error('댓글 삭제 실패:', error);
