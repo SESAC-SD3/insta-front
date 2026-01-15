@@ -32,7 +32,7 @@ const Header = () => {
                 explore
               </Link>
               <Link to="/create" className="nav-link">
-                +
+                new
               </Link>
               <Link
                 to={`/profile/${user?.username}`}
