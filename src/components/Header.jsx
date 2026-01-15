@@ -23,13 +23,13 @@ const Header = () => {
           {isAuthenticated ? (
             <>
               <Link to="/" className="nav-link">
-                홈
+                home
               </Link>
               <Link to="/all" className="nav-link">
-                전체
+                all
               </Link>
               <Link to="/explore" className="nav-link">
-                탐색
+                explore
               </Link>
               <Link to="/create" className="nav-link">
                 +
